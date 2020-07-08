@@ -35,7 +35,7 @@ def analyze(heroHand, villan_range, iterations = 19600):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Calculate the probability of a hero hand againts a defined villan\'s range.')
     parser.add_argument("--hand", required=True, help="set the hero hands cards. Example: \"JcJh\".")
-    parser.add_argument("--range", help="set the villan's range. Example: [\"Qc\", \"Th\", \"9s\"].", required=True, type=str)
+    parser.add_argument("--range", help="set the villan's range. Example: '22+ A2+ KT+ QJ+ 32 42 52 62 72'. The range should be defined by simple quotes ''.", required=True, type=str)
     parser.add_argument("-n", type=int, default = 19600, help="If you desire to define a fixed number of iterantions (Default value 19600)")
     
     args = parser.parse_args()
