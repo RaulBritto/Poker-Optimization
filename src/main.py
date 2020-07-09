@@ -49,3 +49,6 @@ if __name__ == "__main__":
         f, b = analyze(heroHand, villan_range, n)
     else:
         f, b = analyze(heroHand, villan_range)
+
+    print(f)
+    print(b)
